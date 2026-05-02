@@ -1,0 +1,16 @@
+{
+  "name": "remit-contract",
+  "version": "1.0.0",
+  "description": "SwiftRemit Stellar blockchain utilities and scripts",
+  "type": "module",
+  "scripts": {
+    "setup": "node scripts/setup-testnet.js",
+    "fund": "node scripts/fund-account.js",
+    "send": "node scripts/send-payment.js",
+    "check-balance": "node scripts/check-balance.js"
+  },
+  "dependencies": {
+    "@stellar/stellar-sdk": "^12.3.0",
+    "dotenv": "^16.4.5"
+  }
+}
