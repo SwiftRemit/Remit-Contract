@@ -1,0 +1,10 @@
+# Stellar CLI network config for SwiftRemit
+# Used by: stellar contract deploy, stellar contract invoke
+
+[networks.testnet]
+rpc-url = "https://soroban-testnet.stellar.org"
+network-passphrase = "Test SDF Network ; September 2015"
+
+[networks.mainnet]
+rpc-url = "https://soroban-mainnet.stellar.org"
+network-passphrase = "Public Global Stellar Network ; September 2015"
