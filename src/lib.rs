@@ -306,8 +306,8 @@ mod tests {
 
         let token = TokenClient::new(&env, &token_addr);
 
-        // Recipient gets 99.9% (fee = 0.1%)
-        assert_eq!(token.balance(&recvr), 99_990_000);
+        // Recipient gets 99.9% (fee = 0.1% of 100_000_000 = 100_000)
+        assert_eq!(token.balance(&recvr), 99_900_000);
 
         // Tx recorded for both parties
         assert_eq!(client.tx_count(&sender), 1);
